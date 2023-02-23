@@ -19,6 +19,31 @@ body{
     justify-content: space-between;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+
+}
+
+.slideout{
+    animation: slide 1s ease-out forwards;
+}
+
+@keyframes slide {
+    0%{
+        
+    }
+
+    50%{
+        transform: translateX(-100px);
+    }
+
+    100%{
+        transform: translateX(1000px);
+    }
+}
+.emptylist{
+    background-image: url(./backimg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: center;
 }
 
 .head{
@@ -49,7 +74,7 @@ body{
 
 .lists{
     overflow-y: scroll;
-
+    
 }
 
 .lists::-webkit-scrollbar {
