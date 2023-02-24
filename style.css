@@ -25,20 +25,11 @@ body{
 .slideout{
     animation: slide 1s ease-out forwards;
 }
-
-@keyframes slide {
-    0%{
-        
-    }
-
-    50%{
-        transform: translateX(-100px);
-    }
-
-    100%{
-        transform: translateX(1000px);
-    }
+.whiteback {
+    background-color: white;
 }
+
+
 .emptylist{
     background-image: url(./backimg.png);
     background-size: contain;
@@ -84,6 +75,10 @@ body{
 .item:hover{
     box-shadow: 0px 0px 10px grey;
     scale: 1.01;
+}
+
+.green{
+    background-color: rgb(0, 221, 0);
 }
 
 .checkbox{
@@ -159,4 +154,53 @@ body{
     border: none;
     background-color: rgb(0, 221, 0);
     cursor: pointer;
+}
+
+.foot {
+    padding: 30px;
+    background-color: black;
+    color: white;
+  }
+@keyframes slide {
+    0%{
+        
+    }
+
+    50%{
+        transform: translateX(-100px);
+    }
+
+    100%{
+        transform: translateX(1000px);
+    }
+}
+
+@media only screen and (max-width:520px) {
+    .container{
+        width: 300px;
+    }
+
+    .head{
+        width: 300px;
+    }
+
+    .addItem{
+        width: 95%;
+        margin: 0px auto;
+    }
+}
+
+@media only screen and (max-width:340px) {
+    .container{
+        width: 100%;
+    }
+
+    .head{
+        width: 100%;
+    }
+
+    .addItem{
+        width: 95%;
+        margin: 0px auto;
+    }
 }
