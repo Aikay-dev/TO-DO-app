@@ -64,6 +64,8 @@ function clickHandle() {
       });
     });
 
+    /* HANDLING THE GREEN CHECK FOR NEWLY ADDED ITEMS */
+
     let check = document.querySelectorAll(".inbox").forEach((item) => {
       item.addEventListener("click", () => {
         item.classList.toggle("green");
@@ -152,6 +154,8 @@ delbutton = document.querySelectorAll(".delete").forEach((item) => {
   });
 });
 
+
+/* HANDLING GREEN CHECK CLICK FOR ALREADY EXSITING ITEMS */
 let check = document.querySelectorAll(".inbox").forEach((item) => {
   item.addEventListener("click", () => {
     item.classList.toggle("green");
